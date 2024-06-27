@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Attendance System</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" href="favicon_io/favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light ">
+    <a class="navbar-brand" href="Home.html">
+        <img src="Images/side logo.png" alt="Logo">
+    </a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="DailyAttendance.html">Daily Attendance</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="MonthlyAttendance.html">Monthly Attendance</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Leave.html">Leave Information</a>
+            </li>
+        </ul>
+    </div>
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="#profile">
+                <img src="Images/profile-icon.png" alt="Profile Icon">
+            </a>
+        </li>
+    </ul>
+  </nav>
+  <div class="container" id="monthly-attendance">
+    <h2 class="mt-4 text-center">Monthly Attendance</h2>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="select-year">Select Year:</label>
+            <select class="form-control" id="select-year">
+                <!-- Year options will be added dynamically -->
+            </select>
+        </div>
+        <div class="form-group col-md-6">
+            <label for="select-month">Select Month:</label>
+            <select class="form-control" id="select-month">
+                <!-- Month options will be added dynamically -->
+            </select>
+        </div>
+    </div>
+    <table class="table table-bordered mt-3">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Check In</th>
+                <th>Rest Start</th>
+                <th>Rest End</th>
+                <th>Check Out</th>
+                <th>Work Description</th>
+            </tr>
+        </thead>
+        <tbody id="attendance-table">
+            <!-- Data will be added dynamically -->
+        </tbody>
+    </table>
+</div>
+  <footer style="position: fixed;">
+    <div class="container" >
+        <p>&copy; 2024 AutomateXion. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script src="JS.js"></script>
+</body>
+</html>
+
+

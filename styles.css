@@ -1,0 +1,95 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+
+body {
+  padding-top: 70px ; /* Adjust based on the height of your navbar */
+  flex: 1;
+  background-color: #F5F7F8;
+}
+
+.navbar-brand img, .navbar-nav .nav-link img {
+  height: 30px;
+}
+
+/* .navbar {
+  background-color: #EFECEC;
+} */
+
+.navbar {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+footer {
+  background-color: white;
+  padding-top: 20px;
+  text-align: center;
+  width: 100%;
+  position: static;
+  bottom: 0;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px; /* Adjust based on the height of your navbar */
+}
+
+.custom-card {
+  flex: 1;
+  margin: 0 10px; /* Adjust margin as needed */
+}
+
+/* Optional: Adjust card width for responsiveness */
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .custom-card {
+    max-width: 80%;
+    margin-bottom: 20px;
+  }
+}
+
+
+/* .custom-card1 {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+
+.custom-card2 {
+  max-width: 70%;
+  margin: 0 auto;
+} */
+
+.card-img-top {
+  width: 100px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-left: 20px; /* Center the image horizontally */
+  margin-top: 2px;
+}
+
+
+.table {
+  background-color: white;
+}
+
+.apply-leave {
+  margin: 50px;
+  padding: 20px;
+}

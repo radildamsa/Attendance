@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Attendance System</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" href="favicon_io/favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light ">
+    <a class="navbar-brand" href="Home.html">
+        <img src="Images/side logo.png" alt="Logo">
+    </a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" href="DailyAttendance.html">Daily Attendance</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="MonthlyAttendance.html">Monthly Attendance</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Leave.html">Leave Information</a>
+            </li>
+        </ul>
+    </div>
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="#profile">
+                <img src="Images/profile-icon.png" alt="Profile Icon">
+            </a>
+        </li>
+    </ul>
+  </nav>
+  <div class="container">
+    <h2 class="mt-4 text-center">Daily Attendance</h2>
+    <div id="date-time" class="mb-3 text-center"></div>
+    
+    <div class="card-container">
+        <div class="card p-3 mb-3 custom-card">
+            <div class="form-group">
+                <div class="checkIn mb-4">
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control" id="check-in-time" placeholder="System check in time" readonly>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-primary" onclick="checkIn()">Check In</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="rest mb-4">
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control" id="rest-start-time" placeholder="Rest start time" readonly>                       
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-secondary" onclick="restStart()">Rest</button>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="restEnd mb-4">
+                    <div class="row">
+                        <div class="col">                        
+                            <input type="text" class="form-control" id="rest-end-time" placeholder="Rest end time" readonly>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-secondary" onclick="restEnd()">End Rest</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="checkOut">
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control" id="check-out-time" placeholder="System check out time" readonly>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-primary" onclick="checkOut()">Check Out</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    
+        <div class="card p-3 mb-3 custom-card">
+            <div class="form-group">
+                <div class="checkIn">
+                    <div class="row">
+                        <div class="col">
+                            <label for="check-in-time-rounded" class="p-3">Check in: </label>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control mt-2" id="check-in-time-rounded" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="Rest">
+                    <div class="row">
+                        <div class="col">
+                            <label for="rest-hours" class="p-3">Rest: </label>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control mt-2" id="rest-hours" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="CheckOut">
+                    <div class="row">
+                        <div class="col">
+                            <label for="check-out-time-rounded" class="p-3">Check out: </label>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control mt-2" id="check-out-time-rounded" readonly>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="card p-3 mb-3">
+        <div class="form-group">
+            <label for="work-done">Work Done Today:</label>
+            <textarea class="form-control" id="work-done" rows="3"></textarea>
+            <div class="d-grid gap-2">
+                <button type="button" class="btn btn-success mt-2 w-100" onclick="submitWorkDone()">Submit Work</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+  <footer>
+    <div class="container">
+        <p>&copy; 2024 AutomateXion. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script src="JS.js"></script>
+</body>
+</html>
+
+
+
