@@ -23,6 +23,11 @@ body {
   background-image: url(Images/background.jpg);
 }
 
+.login {
+  width: 30%;
+  margin: 0 auto;
+}
+
 .navbar-brand img, .navbar-nav .nav-link img {
   height: 30px;
 }
