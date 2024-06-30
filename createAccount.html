@@ -35,44 +35,35 @@
         </ul>
   </nav>
 
-  <div class="create-account wrapper card m-5 p-5">
-    <h2 class="mt-4 text-center">Create Account</h2>
-    <form action="/submit_profile" method="post">
-      <div class="form-group">
-          <label for="firstname">First Name:</label>
-          <input type="text" class="form-control" id="firstname" name="firstname" required>
+  <div class="wrapper">
+    <div class="create-account card m-5 p-5">
+        <h2 class="mt-4 text-center">Create Account</h2>
+        <form action="createAccount.php" method="post">
+          <div class="form-group">
+              <label for="firstname">First Name:</label>
+              <input type="text" class="form-control" id="firstname" name="firstname" required>
+          </div>
+          <div class="form-group">
+              <label for="lastname">Last Name:</label>
+              <input type="text" class="form-control" id="lastname" name="lastname" required>
+          </div>
+          <div class="form-group">
+            <label for="username">Username: </label>
+            <input type="text" class="form-control" id="username" name="username" required>
+        </div>
+          <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" class="form-control" id="password" name="password">
+        </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
       </div>
-      <div class="form-group">
-          <label for="lastname">Last Name:</label>
-          <input type="text" class="form-control" id="lastname" name="lastname" required>
-      </div>
-      <div class="form-group">
-        <label for="position">Position:</label>
-        <input type="text" class="form-control" id="position" name="position" required>
-    </div>
-      <div class="form-group">
-          <label for="dob">Date of Birth:</label>
-          <input type="date" class="form-control" id="dob" name="dob" required>
-      </div>
-      <div class="form-group">
-          <label for="email">Email:</label>
-          <input type="email" class="form-control" id="email" name="email" required>
-      </div>
-      <div class="form-group">
-          <label for="address">Address:</label>
-          <input type="text" class="form-control" id="address" name="address">
-      </div>
-      <div class="form-group">
-          <label for="phone">Phone Number:</label>
-          <input type="tel" class="form-control" id="phone" name="phone">
-      </div>
-      <div class="form-group">
-        <label for="password">Password:</label>
-        <input type="password" class="form-control" id="password" name="password">
-    </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
   </div>
+  
   
 
 
